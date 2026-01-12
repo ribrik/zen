@@ -1,0 +1,193 @@
+html, body{
+  background-color: #0c0a10;
+  background-image: url(images/bg.png);
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", Tahoma, "Lucida Sans", Arial, Verdana, Helvetica, sans-serif;
+  color: #f5effa;
+}
+
+abbr{
+	border-bottom: 1px dotted #b58cff;
+}
+
+header h1, header h2, .sidebar h3{
+	display: none;
+}
+
+.wrapper, .intro{
+	display: block;
+}
+
+@media screen{
+	header, div.summary{
+		position: fixed;
+	}
+	* html header, * html div.summary{
+		position: absolute;
+	}
+}
+
+header{
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 320px;
+	background: url(images/kuromi.png) left top no-repeat;
+	background-size: contain;
+}
+
+div.summary{
+	left: 0;
+	top: 250px;
+	width: 185px;
+	color: #cdb9df;
+	font-size: 12px;
+	padding: 6px 10px 6px 8px;
+	background: rgba(21, 17, 28, 0.65);
+	border-left: 3px solid #ff4fb4;
+}
+
+div.summary a{
+	font-weight: bold;
+	color: #ff4fb4;
+	text-decoration: none;
+}
+
+div.summary a:hover{
+	color: #b58cff;
+}
+
+div.preamble, .supporting{
+	margin-left: 463px;
+	padding: 14px 14px 4px 24px;
+	padding-bottom: 0;
+
+	background: rgba(12, 10, 16, 0.72);
+	border-left: 1px solid rgba(255, 79, 180, 0.25);
+}
+
+div.preamble h3, .supporting h3{
+	display: block;
+	background: url(images/hbg.png) left top repeat #15111c;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 24px;
+	line-height: 50px;
+	text-transform: lowercase;
+	border-left: 6px solid #ff4fb4;
+}
+
+div.preamble p, .supporting p{
+	font-size: 14px;
+	color: #efe9f6;
+	line-height: 1.65em;
+}
+
+div.preamble a, .supporting a{
+	color: #b58cff;
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(181, 140, 255, 0.55);
+}
+
+div.preamble a:hover, .supporting a:hover{
+	color: #0c0a10;
+	background: #ff4fb4;
+	border-bottom-color: transparent;
+	padding: 0 2px;
+}
+
+div.preamble abbr, .supporting abbr{
+	border-bottom: 1px dotted #cdb9df;
+}
+
+footer{
+	display: block;
+	height: 20px;
+	background: url(images/hbg.png) left top repeat #15111c;
+	padding: 3px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #cdb9df;
+}
+
+footer a{
+	color: #ff4fb4;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #b58cff;
+}
+
+.sidebar{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 263px;
+	font-family: Baskerville, Georgia, Garamond, "Times New Roman", serif;
+	background: rgba(21, 17, 28, 0.25);
+}
+
+.sidebar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul li{
+	border-bottom: 1px solid #2b2236;
+}
+
+.sidebar ul li a{
+	display: block;
+	padding: 6px 20px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ff4fb4;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .6px;
+}
+
+.sidebar ul li a:hover{
+	background-color: #15111c;
+	color: #fff;
+}
+
+.sidebar div.design-selection ul li{
+	padding: 5px 20px;
+	font-size: 10px;
+	color: #cdb9df;
+}
+
+.sidebar div.design-selection ul li a{
+	padding: 0;
+	font-size: 12px;
+	color: #b58cff;
+}
+
+.sidebar div.design-selection ul li a:hover{
+	color: #ff4fb4;
+	background-color: transparent;
+}
+
+.sidebar div.design-selection ul li a.designer-name{
+	display: inline;
+	text-transform: none;
+	font-size: 10px;
+	color: #cdb9df;
+}
+
+.sidebar div.design-selection ul li a.designer-name:hover{
+	text-decoration: underline;
+}
