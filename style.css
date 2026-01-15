@@ -16,7 +16,6 @@
 
 html, body{
   background-color: #0c0a10;
-  background-image: url(images/bg.png);
   background-repeat: repeat;
   background-position: left top;
   background-attachment: fixed;
@@ -89,7 +88,6 @@ div.preamble, .supporting{
 
 div.preamble h3, .supporting h3{
 	display: block;
-	background: url(images/hbg.png) left top repeat #15111c;
 	margin: 0;
 	padding: 0;
 	padding-left: 20px;
@@ -126,7 +124,6 @@ div.preamble abbr, .supporting abbr{
 footer{
 	display: block;
 	height: 20px;
-	background: url(images/hbg.png) left top repeat #15111c;
 	padding: 3px;
 	font-size: 12px;
 	line-height: 20px;
