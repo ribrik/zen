@@ -12,10 +12,21 @@
      by the designer.
 
    HTML remains unmodified, per CSS Zen Garden rules.
-   ========================================================== */
+========================================================== */
 
-html, body{
-  background-color: #0c0a10;
+:root {
+	--background: #0c0a10;
+	--background-secondary: #15111c;
+	--text-main: #efe9f6;
+	--text: #cdb9df;
+	--text-bright: #ffffff;
+	--primary: #ff4fb4;
+	--accent: #b58cff;
+	--separator: #2b2236;
+}
+
+body {
+  background-color: var(--background);
   background-repeat: repeat;
   background-position: left top;
   background-attachment: fixed;
@@ -23,22 +34,22 @@ html, body{
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", Tahoma, "Lucida Sans", Arial, Verdana, Helvetica, sans-serif;
-  color: #f5effa;
+  color: var(--text);
 }
 
-abbr{
-	border-bottom: 1px dotted #b58cff;
+abbr {
+	border-bottom: 1px dotted var(--accent);
 }
 
-header h1, header h2, .sidebar h3{
+header h1, header h2, .sidebar h3 {
 	display: none;
 }
 
-.wrapper, .intro{
+.wrapper, .intro {
 	display: block;
 }
 
-@media screen{
+@media screen {
 	header, div.summary{
 		position: fixed;
 	}
@@ -47,7 +58,7 @@ header h1, header h2, .sidebar h3{
 	}
 }
 
-header{
+header {
 	left: 0;
 	top: 0;
 	width: 200px;
@@ -56,72 +67,67 @@ header{
 	background-size: contain;
 }
 
-div.summary{
+.summary {
 	left: 0;
 	top: 250px;
 	width: 185px;
-	color: #cdb9df;
+	color: var(--text);
 	font-size: 12px;
 	padding: 6px 10px 6px 8px;
-	background: rgba(21, 17, 28, 0.65);
-	border-left: 3px solid #ff4fb4;
+	border-left: 3px solid var(--primary);
 }
 
-div.summary a{
+.summary a {
 	font-weight: bold;
-	color: #ff4fb4;
+	color: var(--primary);
 	text-decoration: none;
 }
 
-div.summary a:hover{
-	color: #b58cff;
+.summary a:hover {
+	color: var(--accent);
 }
 
-div.preamble, .supporting{
+.preamble, .supporting {
 	margin-left: 463px;
 	padding: 14px 14px 4px 24px;
 	padding-bottom: 0;
-
-	background: rgba(12, 10, 16, 0.72);
-	border-left: 1px solid rgba(255, 79, 180, 0.25);
+	border-left: 1px solid rgba(from var(--primary) r g b / 0.25);
 }
 
-div.preamble h3, .supporting h3{
+.preamble h3, .supporting h3 {
 	display: block;
 	margin: 0;
 	padding: 0;
 	padding-left: 20px;
-	color: #fff;
+	color: var(--text-bright);
 	font-size: 24px;
 	line-height: 50px;
 	text-transform: lowercase;
-	border-left: 6px solid #ff4fb4;
+	border-left: 6px solid var(--primary);
 }
 
-div.preamble p, .supporting p{
+.preamble p, .supporting p {
 	font-size: 14px;
-	color: #efe9f6;
+	color: var(--text-main);
 	line-height: 1.65em;
 }
 
-div.preamble a, .supporting a{
-	color: #b58cff;
+.preamble a, .supporting a {
+	color: var(--accent);
 	text-decoration: none;
-	border-bottom: 1px dotted rgba(181, 140, 255, 0.55);
 }
 
-div.preamble a:hover, .supporting a:hover{
-	color: #0c0a10;
-	background: #ff4fb4;
+.preamble a:hover, .supporting a:hover {
+	color: var(--background);
+	background: var(--primary);
 	border-bottom-color: transparent;
-	padding: 0 2px;
 }
 
-div.preamble abbr, .supporting abbr{
-	border-bottom: 1px dotted #cdb9df;
+.preamble abbr, .supporting abbr {
+	border-bottom: 1px dotted var(--text);
 }
 
-footer{
+footer {
 	display: block;
 	height: 20px;
 	padding: 3px;
@@ -129,78 +135,77 @@ footer{
 	line-height: 20px;
 	text-align: center;
 	margin-bottom: 10px;
-	color: #cdb9df;
+	color: var(--text);
 }
 
-footer a{
-	color: #ff4fb4;
+footer a {
+	color: var(--primary);
 	font-weight: bold;
 	text-decoration: none;
 }
 
-footer a:hover{
-	color: #b58cff;
+footer a:hover {
+	color: var(--accent);
 }
 
-.sidebar{
+.sidebar {
 	position: absolute;
 	left: 200px;
 	top: 0px;
 	width: 263px;
 	font-family: Baskerville, Georgia, Garamond, "Times New Roman", serif;
-	background: rgba(21, 17, 28, 0.25);
 }
 
-.sidebar ul{
+.sidebar ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.sidebar ul li{
-	border-bottom: 1px solid #2b2236;
+.sidebar ul li {
+	border-bottom: 1px solid var(--separator);
 }
 
-.sidebar ul li a{
+.sidebar ul li a {
 	display: block;
 	padding: 6px 20px;
 	font-weight: bold;
 	font-size: 12px;
-	color: #ff4fb4;
+	color: var(--primary);
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: .6px;
 }
 
-.sidebar ul li a:hover{
-	background-color: #15111c;
-	color: #fff;
+.sidebar ul li a:hover {
+	background-color: var(--background-secondary);
+	color: var(--text-bright);
 }
 
-.sidebar div.design-selection ul li{
+.sidebar .design-selection ul li {
 	padding: 5px 20px;
 	font-size: 10px;
-	color: #cdb9df;
+	color: var(--text);
 }
 
-.sidebar div.design-selection ul li a{
+.sidebar .design-selection ul li a {
 	padding: 0;
 	font-size: 12px;
-	color: #b58cff;
+	color: var(--accent);
 }
 
-.sidebar div.design-selection ul li a:hover{
-	color: #ff4fb4;
+.sidebar .design-selection ul li a:hover {
+	color: var(--primary);
 	background-color: transparent;
 }
 
-.sidebar div.design-selection ul li a.designer-name{
+.sidebar .design-selection ul li a.designer-name {
 	display: inline;
 	text-transform: none;
 	font-size: 10px;
-	color: #cdb9df;
+	color: var(--text);
 }
 
-.sidebar div.design-selection ul li a.designer-name:hover{
+.sidebar .design-selection ul li a.designer-name:hover {
 	text-decoration: underline;
 }
