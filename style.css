@@ -12,7 +12,7 @@
      by the designer.
 
    HTML remains unmodified, per CSS Zen Garden rules.
-   ========================================================== */
+========================================================== */
 
 html, body{
   background-color: #0c0a10;
@@ -114,7 +114,6 @@ div.preamble a:hover, .supporting a:hover{
 	color: #0c0a10;
 	background: #ff4fb4;
 	border-bottom-color: transparent;
-	padding: 0 2px;
 }
 
 div.preamble abbr, .supporting abbr{
